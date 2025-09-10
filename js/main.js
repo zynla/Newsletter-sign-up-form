@@ -15,19 +15,17 @@ form.addEventListener("submit", (e)=> {
         email.style.color = "#ff6257ff";
     } else {
         emailaddress.textContent = email.value;
-        main.classList.toggle("hidden");
+        main.classList.replace("lg:grid","hidden");
         success.classList.toggle("hidden");
         emailerror.classList.replace("flex", "hidden");
         email.style.border = "";
         email.style.background = "";
         email.style.color = "";
-        
     }
-    
 });
 
 dismiss.addEventListener("click", ()=> {
     form.reset();
-    main.classList.toggle("hidden");
+    main.classList.replace("hidden","lg:grid");
     success.classList.toggle("hidden");
 });

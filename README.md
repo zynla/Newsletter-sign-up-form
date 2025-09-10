@@ -50,7 +50,7 @@ Here is a screenshot of the success page:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/meet-landing-page-2cqRWvWRfb)
-- Live Site URL: [Vercel.com](https://meet-landing-page-nu-seven.vercel.app/)
+- Live Site URL: [Vercel.com](https://newsletter-sign-up-form-mocha.vercel.app/)
 
 ## My process
 
@@ -89,4 +89,3 @@ This is my second project using JavaScript:
 - [ChatGPT (OpenAI)](https://chatgpt.com/) - This helped me understand how different CSS properties work together, especially layout behavior and default styles. I used it as a coding assistant whenever I had a doubt.
 - [Tailwind CSS Documentation](https://tailwindcss.com/) - The official documentation was a great resource for me while working on this project. I really liked how well-structured it is, with clear examples for each utility class. It helped me understand how to quickly apply styles and manage responsive design using Tailwind.
 - [W3Schools](https://www.w3schools.com) - I used this site a lot to review syntax, explore new CSS properties, and test small snippets of code. It's really helpful for quick references and hands-on practice while learning.
-- 
