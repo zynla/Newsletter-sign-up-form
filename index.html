@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <script src="js/main.js" defer></script>
+</head>
+
+<!--
+    Pictures desktop mobile, 
+    marge mobile & desktop
+    correct spacing from figma: desktop cbn, 
+-->
+<body class="sm:p-[16.6rem] sm:bg-[#36384eff] sm:flex sm:flex-col sm:items-center">
+  <main  class=" font-[Roboto] text-[#242742ff]">
+    <section id="main" class="lg:pl-[4rem] lg:grid lg:grid-cols-2 lg:gap-[4rem] flex flex-col lg:p-[2rem] sm:p-[2.5rem] sm:min-w-[38rem] lg:min-w-[55rem] sm:bg-white sm:rounded-4xl">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" class="block sm:hidden lg:hidden w-full">
+      <div class="lg:justify-center lg:gap-[2rem] w-full max-sm:px-[1.5rem] max-sm:py-[2.5rem] flex flex-col max-sm:gap-[1.5rem]">
+        <img src="assets/images/illustration-sign-up-tablet.svg" alt="illustration-sign-up-tablet" class="block max-sm:hidden min-lg:hidden w-[33rem]">
+        <h1 class="leading-none font-bold text-[2.5rem] lg:text-[3.5rem] sm:max-lg:pt-[2.5rem] sm:max-lg:pb-6">Stay updated!</h1>
+        <p class="leading-6 font-normal text-base sm:max-lg:mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="leading-6 flex flex-col gap-[.5rem] font-normal text-base sm:max-lg:mb-6">
+          <i class="flex flex-row justify-start items-start gap-[1rem] not-italic"><img class="w-[1.3rem]" src="assets/images/icon-list.svg" alt="icon-list">Product discovery and building what matters</i>
+          <i class="flex flex-row justify-start items-start gap-[1rem] not-italic"><img class="w-[1.3rem]" src="assets/images/icon-list.svg" alt="icon-list">Measuring to ensure updates are a success</i>
+          <i class="flex flex-row justify-start items-start gap-[1rem] not-italic"><img class="w-[1.3rem]" src="assets/images/icon-list.svg" alt="icon-list">And much more!</i>
+        </ul>
+
+        <div>
+          <form class="flex flex-col justify-start" novalidate>
+            <div class="flex flex-row justify-between">
+              <label class="mb-2 font-bold text-xs" for="email">Email address</label>
+              <span class="mb-2 self-end text-[#ff6257ff] font-bold text-xs hidden" aria-live="polite" id="email-error">Valid email required</span>
+            </div>
+            <input class="mb-6 sm:mb-6 lg:mb-6 px-6 py-4 border rounded-lg border-[#cacbd1]" type="email" id="email" placeholder="email@company.com" required>
+            <button class="cursor-pointer text-white bg-[#242742ff] hover:bg-gradient-to-r from-[#ff6a38ff] to-[#ff527aff] font-bold text-sm border rounded-lg px-[3rem] py-4" type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+      </div>
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" class="max-lg:hidden block w-[25rem]">
+    </section>
+
+    <div id="success" class="hidden sm:p-[4rem] sm:w-[31.5rem] sm:h-[32.5rem] sm:justify-center sm:items-start sm:bg-white sm:rounded-4xl">
+      <section class="flex flex-col justify-between sm:gap-[2rem] sm:h-[50vh] max-sm:h-[100vh] max-sm:px-5 max-sm:pb-8 max-sm:pt-20">
+        <div>
+          <img class="sm:w-[4rem] sm:mb-8 max-sm:my-6 max-sm:w-13" src="assets/images/icon-success.svg" alt="icon-success">
+          <h1 class="leading-none font-bold max-sm:text-4xl sm:text-[3.5rem] mb-6">Thanks for subscribing!</h1>
+          <p class="leading-6 font-normal max-sm:text-base sm:text-m">A confirmation email has been sent to <span id="emailaddress" class="font-bold"></span>. 
+          Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <button id="dismiss" class="text-white cursor-pointer bg-[#242742ff] hover:bg-gradient-to-r from-[#ff6a38ff] to-[#ff527aff] font-bold text-sm border rounded-lg py-[1rem]" type="button">Dismiss message</button>  
+      </section>
+    </div>
+  </main>
+</body>
+</html>
