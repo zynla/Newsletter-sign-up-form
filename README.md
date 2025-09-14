@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-This is a solution to the [Newsletter sign-up form with success message](https://www.frontendmentor.io/challenges/). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Newsletter sign-up form with success message](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -49,7 +49,7 @@ Here is a screenshot of the success page:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/meet-landing-page-2cqRWvWRfb)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-h6sUgA4fLI)
 - Live Site URL: [Vercel.com](https://newsletter-sign-up-form-mocha.vercel.app/)
 
 ## My process
@@ -65,8 +65,6 @@ Here is a screenshot of the success page:
 
 ### What I learned
 
-This challenge took me quite some time to finish 😅, but I’m really proud of the progress I made! Here are the main things I learned:
-
 #### Tailwind CSS
 
 - I discovered how to use Tailwind for styling, since I already have a solid understanding of CSS, it was easier to get started.
@@ -78,11 +76,16 @@ This challenge took me quite some time to finish 😅, but I’m really proud of
 #### JavaScript
 
 This is my second project using JavaScript:
-- I learned how to get values from a form using .value.
 
-- I practiced changing styles dynamically from JS.
+- I learned how to get values from a form using ``.value``.
 
-- I got familiar with useful functions and methods such as: `classList.replace()` , `checkValidity()` , `form.reset()` ...etc;
+- I practiced changing styles dynamically from JS and it's easy more with Tailwind.
+
+- I got familiar with useful functions and methods such as: `classList.replace()` , `checkValidity()` , `form.reset()` ...etc; 
+
+- I learned many `EventListener` such as: `Click`, `Submit`, `Input` ...etc.
+
+- `preventDefault()` prevents the default behavior of an event (for example, automatically reloading the page when submitting a form), allowing full control through JavaScript logic.
 
 ### Useful resources
 
